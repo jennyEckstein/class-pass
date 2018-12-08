@@ -1,5 +1,8 @@
-const root = require('./src/index');
+const express = require('express');
+const app = express();
 
-const result = root.addTwoNUmbers(2, 3);
+app.listen(3000);
 
-console.log('Result is: ', result);
+app.get('/', (req, res) => {
+    res.send('Express Setup');
+})

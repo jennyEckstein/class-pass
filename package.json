@@ -24,14 +24,22 @@
   "homepage": "https://github.com/jennyEckstein/class-pass#readme",
   "jest": {
     "verbose": true,
-    "roots": ["./spec/"]
+    "roots": [
+      "./spec/"
+    ]
   },
-  "pre-commit": ["test", "eslint"],
+  "pre-commit": [
+    "test",
+    "eslint"
+  ],
   "devDependencies": {
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.11.0",
-    "jest": "^22.4.3",
+    "eslint-plugin-import": "^2.14.0",
+    "jest": "^23.6.0",
     "pre-commit": "^1.2.2"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
   }
 }
