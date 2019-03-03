@@ -3,6 +3,6 @@ const getClasses = require('./get-classes');
 
 const router = express.Router();
 
-router.get('/helo', getClasses);
+router.get('/', getClasses);
 
 module.exports = router;

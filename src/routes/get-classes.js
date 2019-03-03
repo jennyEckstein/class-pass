@@ -1,11 +1,9 @@
-const connection = require('../db/mysql-connection');
-
-const query = 'select * from Class inner join ClassType on Class.class_type = ClassType.id;';
+const { classes } = require('../sampleDataSource');
 
 module.exports = ((req, res) => {
-  connection.query(query, (err, results) => {
-    if (err) throw err;
-    res.send(results);
-  });
+  const { id } = req.query;
+  const result = classes.getClassById(id);
+
+  res.send(result);
 });
 
