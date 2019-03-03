@@ -35,12 +35,12 @@
   "devDependencies": {
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.14.0",
-    "jest": "^23.6.0",
+    "eslint-plugin-import": "^2.16.0",
+    "jest": "^24.1.0",
+    "nodemon": "^1.18.10",
     "pre-commit": "^1.2.2"
   },
   "dependencies": {
-    "express": "^4.16.4",
-    "mysql2": "^1.6.4"
+    "express": "^4.16.4"
   }
 }
