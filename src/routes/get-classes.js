@@ -1,9 +1,11 @@
-const { classes } = require('../sampleDataSource');
+const connection = require('../config/db-connection');
+
+const query = "SELECT * FROM workout;"
 
 module.exports = ((req, res) => {
-  const { id } = req.query;
-  const result = classes.getClassById(id);
-
-  res.send(result);
+  connection.query(query, (err, result) => {
+    if (err) throw err;
+    res.send(result);
+  });
 });
 
