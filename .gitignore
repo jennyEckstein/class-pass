@@ -58,4 +58,7 @@ typings/
 .env
 
 # credentials
-src/config/creds
+src/config/creds.js
+
+# debug setup
+.vscode/launch.json

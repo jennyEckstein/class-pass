@@ -5,10 +5,10 @@ const connection = mysql.createConnection({
   host: creds.host,
   user: creds.user,
   password: creds.password,
-  database: creds.database
+  database: creds.database,
 });
 
-connection.connect(err => {
+connection.connect((err) => {
   if (err) throw err;
   console.log('Connected to DB');
 });
